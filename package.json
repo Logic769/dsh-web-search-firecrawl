@@ -1,0 +1,35 @@
+{
+  "name": "dsh-web-search-firecrawl",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Firecrawl-backed search provider for the DeepSeek Harness web capability seam (ctx.web)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.7"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-web": "*",
+    "@deepseek-ai/dsh-credentials": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "web-search",
+    "firecrawl"
+  ],
+  "license": "MIT"
+}
